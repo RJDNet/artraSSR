@@ -1,0 +1,17 @@
+{
+  "presets": [
+    "react",
+    "stage-2",
+    "env"
+  ],
+  "plugins": [
+    "styled-jsx/babel",
+    "transform-class-properties",
+    [
+      "import-inspector",
+      {
+        "serverSideRequirePath": true
+      }
+    ]
+  ]
+}
