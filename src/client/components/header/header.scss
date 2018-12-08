@@ -1,0 +1,142 @@
+.headerContainer {
+  position: relative;
+  height: 72px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.blockerLeft {
+  position: absolute;
+  display: inline-block;
+  top: 0px;
+  left: 0px;
+  display: inline-block;
+  height: 72px;
+  width: 72px;
+}
+
+.blockerRight {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 72px;
+  width: 122px;
+  text-decoration: none;
+}
+
+.logoContainer {
+  position: relative;
+  display: flex;
+  height: 72px;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+}
+
+.mainLogo {
+  position: relative;
+  display: block;
+  height: 45px;
+  width: 155px;
+}
+
+.snipcart-summary {
+  top: 0px;
+  right: 0px;
+  height: 72px;
+  width: 122px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.snipcart-checkout {
+  position: relative;
+  display: block;
+  height: 72px;
+  width: 122px;
+}
+
+.snipcart-total-items {
+  position: absolute;
+  top: 17px;
+  left: 40px;
+  color: black;
+}
+
+.snipcart-total-price {
+  position: absolute;
+  top: 35px;
+  right: 20px;
+  color: black;
+}
+
+.shopIcon {
+  position: relative;
+  top: 15px;
+  left: 10px;
+  height: 42px;
+  width: 48px;
+}
+
+.sideHeaderContainer {
+  position: absolute;
+  display: flex;
+  height: 72px;
+  width: 144px;
+  top: 0px;
+  right: 140px;
+}
+
+.sideContainer {
+  position: relative; 
+  width: 72px;
+  height: 72px;
+}
+
+.side {
+  position: relative;
+  top: 23px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 799px) {
+  .headerContainer {
+    border-bottom: 1px solid red;
+  }
+
+  .sideContainer {
+    display: none; 
+  }
+
+  .blockerRight {
+    width: 72px;
+  }
+
+  .snipcart-checkout {
+    width: 72px;
+  }
+
+  .snipcart-summary {
+    width: 72px;
+  }
+
+  .mainLogo {
+    width: 100px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .logoContainer {
+    display: inline-block;
+    width: 140px;
+  }
+
+  .blockerLeft {
+    display: none;
+  }
+
+  .sideContainer {
+    display: inline-block;
+  }
+}

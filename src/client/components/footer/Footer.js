@@ -1,5 +1,8 @@
 import React from 'react';
 
+// import footer from './Footer.scss';
+// import withStyles from 'isomorphic-style-loader/lib/withStyles';
+
 import Twitter from '../../images/Twitter.png';
 import Facebook from '../../images/Facebook.png';
 import Google from '../../images/Google.png';
@@ -13,7 +16,7 @@ const Footer = () => {
 
         <div className='footer'>
           <ul className='ulFooter'>
-            <li className='liFooterTitle'>About SMG</li>
+            <li className='liFooterTitle'>About ARTREEL</li>
             <a id='footerLink' href='/'><li className='liFooter'>About Us</li></a>
             <a id='footerLink' href='/'><li className='liFooter'>Blog</li></a>
             <a id='footerLink' href='/'><li className='liFooter'>Content</li></a>
@@ -54,7 +57,7 @@ const Footer = () => {
 
 
         <div className='copyContainer'>
-          <span className='copy'>©SMG Image Solutions</span>
+          <span className='copy'>©ARTREEL Image Solutions</span>
         </div>
       </div>
 

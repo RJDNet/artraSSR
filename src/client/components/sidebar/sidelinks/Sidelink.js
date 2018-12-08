@@ -26,13 +26,13 @@ const linkUnderline = {
 const Sidelink = props => {
   return (
     <Aux>
-      <li>
+      <li className='sideLinker'>
         <Link exact='true' to={props.linkTo} style={linkUnderline} onClick={props.clicker}>{props.label}</Link>
       </li>
 
       <style jsx>
         {`
-          li {
+          .sideLinker {
             position: relative;
             display: block;
             width: 100%;
@@ -42,7 +42,7 @@ const Sidelink = props => {
             transition: 0.1s;
           }
 
-          li:hover {
+          .sideLinker:hover {
             background-color: rgba(0,0,0,0.08);
             padding-left: 15px;
             transition: 0.1s;

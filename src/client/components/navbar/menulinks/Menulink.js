@@ -29,7 +29,7 @@ const Menulink = props => {
         <Link id='menuLink' exact='true' to={props.linkTo} style={linkUnderline}>{props.label}</Link>
       </li>
 
-      <style jsx>
+      {/* <style jsx>
         {`
           .liMenuLink {
             position: relative;
@@ -41,7 +41,7 @@ const Menulink = props => {
             transition: 0.1s;
           }
         `}
-      </style>
+      </style> */}
     </Aux>
   );
 };

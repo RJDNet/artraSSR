@@ -4,8 +4,10 @@ import ReactDOMServer from 'react-dom/server';
 import ReactDOM from 'react-dom';
 import { StaticRouter } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-import { flush } from 'styled-jsx/server'
-import { flushToHTML } from 'styled-jsx/server'
+import { flush } from 'styled-jsx/server';
+import { flushToHTML } from 'styled-jsx/server';
+import ContextProvider from './client/contextProvider';
+
 import express from 'express';
 import compression from 'compression';
 
@@ -40,10 +42,18 @@ app.get('*', async (req, res) => {
     cache
   });
 
+  const css = new Set()
+  const csscontext = {
+    insertCss: (...styles) =>
+      styles.forEach(style => css.add(style._getCss()))
+  }
+
   const component = await (
     <ApolloProvider client={client}>
       <StaticRouter location={req.url} context={context}>
-        <App />
+        <ContextProvider csscontext={csscontext}>
+          <App />
+        </ContextProvider>
       </StaticRouter>
     </ApolloProvider>
   );
@@ -54,7 +64,8 @@ app.get('*', async (req, res) => {
         {helmet.title.toComponent()}
         {helmet.meta.toComponent()}
         <head>
-          <link rel="stylesheet" type="text/css" href="styles.css" />
+          {/* <link rel="stylesheet" type="text/css" href="styles.css" /> */}
+          <style type="text/css">${[...css].join('')}</style>
           <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet" />
           {styles}
         </head>

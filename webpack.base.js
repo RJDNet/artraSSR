@@ -1,33 +1,43 @@
 // const BrotliPlugin = require("brotli-webpack-plugin");
 // const CompressionPlugin = require('compression-webpack-plugin');
 
+// const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+// const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+// const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+// const devMode = process.env.NODE_ENV !== 'production'
+
 module.exports = {
   // mode: 'development',
   mode: 'production',
-  module: {
-    rules: [
-      {
-        test: /\.js?$/,
-        enforce: 'pre',
-        use: 'babel-loader',
-        exclude: /node_modules/
-      },
-      {
-        test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader'
-        ]
-      },
-      {
-        test: /\.(png|svg|jpg|gif)$/,
-        use: [
-          'file-loader'
-        ]
-      }
-    ]
-  },
+
+
+  // optimization: {
+  //   splitChunks: {
+  //     cacheGroups: {
+  //       styles: {
+  //         name: 'styles',
+  //         test: /\.css$/,
+  //         chunks: 'all',
+  //         enforce: true
+  //       }
+  //     }
+  //   },
+  //   minimizer: [
+  //     new UglifyJsPlugin({
+  //       cache: true,
+  //       parallel: true,
+  //       sourceMap: true // set to true if you want JS source maps
+  //     }),
+  //     new OptimizeCSSAssetsPlugin({})
+  //   ]
+  // },
+
+
   plugins: [
+    // new MiniCssExtractPlugin({
+    //   filename: devMode ? '[name].css' : '[name].[hash].css',
+    //   chunkFilename: devMode ? '[id].css' : '[id].[hash].css',
+    // })
     // new CompressionPlugin({
     //   threshold: 10240,
     //   minRatio: 0.8,
@@ -40,5 +50,60 @@ module.exports = {
     //   minRatio: 0.8,
     //   deleteOriginalAssets: true
     // })
-  ]
+  ],
+
+
+  module: {
+    rules: [
+      {
+        test: /\.js?$/,
+        enforce: 'pre',
+        use: 'babel-loader',
+        exclude: /node_modules/
+      },
+      {
+        test: /\.(sa|sc|c)ss$/,
+        use: [
+          'isomorphic-style-loader',
+          {
+            loader: 'css-loader'
+          },
+          // Extra Loaders eg. SASS 
+          // 'postcss-loader'
+          {
+            loader: 'sass-loader',
+          },
+        ]
+      },
+      // {
+      //   test: /\.css$/,
+      //   use: [
+      //     'style-loader',
+      //     'css-loader'
+      //   ]
+      // },
+      // {
+      //   test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
+      //   loader: 'url-loader',
+      //   options: {
+      //     limit: 10000,
+      //   }
+      // },
+      // {
+      //   test: /\.(sa|sc|c)ss$/,
+      //   use: [
+      //     devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
+      //     'css-loader',
+      //     // 'postcss-loader',
+      //     // 'sass-loader',
+      //   ],
+      // },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: [
+          'file-loader'
+        ]
+      }
+    ]
+  }
 }

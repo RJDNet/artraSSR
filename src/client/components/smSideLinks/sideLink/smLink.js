@@ -53,11 +53,13 @@ import React from 'react';
 const smLink = props => {
   return (
     <a href='/'>
-      <div id='smLink' style={{ backgroundColor: props.color }}>
+      <div className='smLink' style={{ backgroundColor: props.color }}>
         <div className='smIconContainer'>
           <img className='smLinkBut' src={props.img} />
         </div>
-        <span className='smLinkText'>{props.label}</span>
+        <div className='smTextContainer'>
+          <span className='smLinkText'>{props.label}</span>
+        </div>
 
         {/* <style jsx>
         {`

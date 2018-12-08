@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 
 import App from './App';
+import ContextProvider from './contextProvider.js'
 
 import { ApolloProvider } from 'react-apollo';
 import { ApolloClient } from 'apollo-client';
@@ -22,10 +23,21 @@ const client = new ApolloClient({
   cache: new InMemoryCache().restore(window.__APOLLO_STATE__),
 });
 
+const csscontext = {
+  insertCss: (...styles) => {
+    const removeCss = styles.map(x => x._insertCss());
+    return () => {
+      removeCss.forEach(f => f());
+    };
+  },
+}
+
 ReactDOM.hydrate(
   <ApolloProvider client={client}>
     <BrowserRouter>
-      <App />
+      <ContextProvider csscontext={csscontext}>
+        <App />
+      </ContextProvider>
     </BrowserRouter>
   </ApolloProvider>,
   document.getElementById('root'),

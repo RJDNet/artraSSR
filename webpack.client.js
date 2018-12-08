@@ -9,7 +9,19 @@ const config = {
     filename: 'bundle.js',
     // filename: 'bundle.[contenthash].js',
     path: path.resolve(__dirname, './public')
-  }
+  },
+  // module: {
+  //   rules: [
+  //     {
+  //       loader: 'postcss-loader',
+  //       options: {
+  //         config: {
+  //           path: './postcss.config.js',
+  //         },
+  //       },
+  //     },
+  //   ]
+  // }
 }
 
 module.exports = merge(baseConfig, config);

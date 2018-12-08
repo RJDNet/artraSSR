@@ -24,8 +24,8 @@ const linkUnderline = {
 
 const Navlink = props => {
   return (
-    <Aux id='auxer'>
-      <Link id='linker' exact='true' to={props.linkTo} style={linkUnderline}>{props.label}</Link>
+    <Aux>
+      <Link exact='true' to={props.linkTo} style={linkUnderline}>{props.label}</Link>
     </Aux>
   );
 };

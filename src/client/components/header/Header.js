@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import logo from '../../images/smglogotrans.png';
+import logo from '../../images/smglogotrans4.png';
 import bag from '../../images/shopping-cart.png';
 
 const Header = () => {

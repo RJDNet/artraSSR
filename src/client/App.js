@@ -2,6 +2,9 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
+import a from './styles.scss';
+import withStyles from 'isomorphic-style-loader/lib/withStyles';
+
 import HomePage from './pages/HomePage';
 // import AboutPage from './pages/AboutPage';
 // import BlogPage from './pages/BlogPage';
@@ -20,21 +23,26 @@ import SideLinks from './components/smSideLinks/sideLinkContainer';
 
 
 
-import Loadable from "react-loadable";
-import Loading from "./hoc/pageLoader/PageLoader";
+import Loadable from 'react-loadable';
+import Loading from './hoc/pageLoader/PageLoader';
 
 const AboutComponent = Loadable({
-  loader: () => import("./pages/AboutPage"),
+  loader: () => import('./pages/AboutPage'),
   loading: Loading
 });
 
 const BlogComponent = Loadable({
-  loader: () => import("./pages/BlogPage"),
+  loader: () => import('./pages/BlogPage'),
   loading: Loading
 });
 
 const ShopComponent = Loadable({
-  loader: () => import("./pages/ShopPage"),
+  loader: () => import('./pages/ShopPage'),
+  loading: Loading
+});
+
+const GalleryComponent = Loadable({
+  loader: () => import('./pages/GalleryPage'),
   loading: Loading
 });
 
@@ -43,7 +51,7 @@ const App = () => {
     <Aux>
       <Helmet>
         <title>{`SMG Creative`}</title>
-        <meta property="og:title" content="SMG Creative" />
+        <meta property='og:title' content='SMG Creative' />
       </Helmet>
       <SideLinks />
       <Header />
@@ -51,10 +59,11 @@ const App = () => {
       <Navbar />
       <div className='pageContainer'>
         <Switch>
-          <Route exact path="/" component={HomePage} />
-          <Route path="/about" component={AboutComponent} />
-          <Route path="/blog" component={BlogComponent} />
-          <Route path="/shop" component={ShopComponent} />
+          <Route exact path='/' component={HomePage} />
+          <Route path='/about' component={AboutComponent} />
+          <Route path='/blog' component={BlogComponent} />
+          <Route path='/shop' component={ShopComponent} />
+          <Route path='/gallery' component={GalleryComponent} />
           <Route component={NotFoundPage} />
         </Switch>
       </div>
@@ -164,4 +173,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default withStyles(a)(App);

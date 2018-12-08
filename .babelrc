@@ -5,7 +5,10 @@
     "env"
   ],
   "plugins": [
+    "babel-polyfill",
+    "transform-regenerator",
     "styled-jsx/babel",
+    "syntax-dynamic-import",
     "transform-class-properties",
     [
       "import-inspector",
