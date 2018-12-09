@@ -8,7 +8,8 @@
 @import "./components/wide/wide.scss";
 @import "./components/special/special.scss";
 @import "./components/smSideLinks/sideLinkContainer.scss";
-@import "./components/shopSection/shopSection.scss";
+@import "./components/shopSections/shopSection.scss";
+@import "./components/customerReviews/customerReview.scss";
 
 // HOC
 @import "./hoc/loading/loading.scss";
@@ -34,20 +35,7 @@ h1, h2, h3, h4, h5, p, span {
   padding: 0px;
   margin: 0px;
 }
-
-// .content {
-//   margin: 0px;
-//   padding: 0px;
-// }
-   
-#logoLink {
-  position: relative !important;
-  display: block !important;
-  height: 40px !important;
-  width: 100px !important;
-  margin: 20px auto !important;
-}
-        
+           
 .wideLink {
   position: relative;
   display: block;
@@ -66,7 +54,6 @@ h1, h2, h3, h4, h5, p, span {
   position: relative;
   width: 100%;
   min-height: 400px;        
-  /* background-image: url('./99ef895c517cccb50f63155ff8b92142.jpg');  */
   background-image: url('./images/banner-pic.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -140,6 +127,7 @@ h1, h2, h3, h4, h5, p, span {
   position: relative;
   max-width: 700px;
   margin: 0px auto;
+  padding-bottom: 30px;
   text-align: center;
   color: #262935;
   font-size: 22px;
@@ -150,13 +138,25 @@ h1, h2, h3, h4, h5, p, span {
   display: flex;
   justify-content: space-around;
   max-width: 1000px;
-  margin: 20px auto;
+  margin: 0px auto;
   flex-wrap: wrap;
+}
+
+.customerReviewsContainer {
+  max-width: 800px;
+  margin: 0px auto;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-bottom: 30px;
 }
 
 @media only screen and (max-width: 799px) {
   .homeShopContainer {
     justify-content: center;
+  }
+
+  .customerReviewsContainer {
+    padding-left: 20px;
   }
 }
 

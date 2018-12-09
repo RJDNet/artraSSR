@@ -2,7 +2,8 @@ import React from 'react';
 
 import Special from '../components/special/Special';
 import Wide from '../components/wide/Wide';
-import ShopSection from '../components/shopSection/ShopSection';
+import ShopSection from '../components/shopSections/ShopSection';
+import CustomerReview from '../components/customerReviews/customerReview';
 
 import physical from '../images/shopSections/drawing1.jpg';
 import digital from '../images/shopSections/painting1.jpg';
@@ -15,7 +16,7 @@ const HomePage = () => (
     <Wide />
     <div className='homeContentContainer'>
       <h1 className='homeTitle'>
-        Find great works whether digital or handmade, photographs and art accessories from ARTREEL.
+        Find great works whether digital or handmade, photographs and art accessories from Artra.
       </h1>
 
       <div className='homeShopContainer'>
@@ -46,6 +47,27 @@ const HomePage = () => (
           image={accessories}
           loc='/accessories'
           linkText='Buy Accessories'
+        />
+      </div>
+
+      <div className='customerReviewsContainer'>
+        <h2 className='customerReviewsTitle'>Customer Reviews</h2>
+
+        <CustomerReview
+          title='awdwa'
+          text='awdwa dawdwad aw awd wa dwaddwaw dawdawd wadwawdd awddawawdwa wad  dawdawddw awdwadawdawd adawdawd wadwaw'
+        />
+        <CustomerReview
+          title='awdwa'
+          text='awdwa dawdwad aw awd wa dwaddwaw dawdawd wadwawdd awddawawdwa wad  dawdawddw awdwadawdawd adawdawd wadwaw'
+        />
+        <CustomerReview
+          title='awdwa'
+          text='awdwa dawdwad aw awd wa dwaddwaw dawdawd wadwawdd awddawawdwa wad  dawdawddw awdwadawdawd adawdawd wadwaw'
+        />
+        <CustomerReview
+          title='awdwa'
+          text='awdwa dawdwad aw awd wa dwaddwaw dawdawd wadwawdd awddawawdwa wad  dawdawddw awdwadawdawd adawdawd wadwaw'
         />
       </div>
 

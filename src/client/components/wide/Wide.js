@@ -5,7 +5,7 @@ const Wide = () => {
   return (
     <div className='wideContainer'>
       <div className='wideAdvert'>
-        <p className='wideHeader'>Great pictures at your fingertips!</p>
+        <p className='wideHeader'>Great art at your fingertips!</p>
         <p className='wideText'>Buy from a variety of different styles of both physical and digital framed art</p>
         <Link exact='true' to='/shop' className='wideLink' style={{ textDecoration: 'underline' }}>SHOP</Link>
       </div>

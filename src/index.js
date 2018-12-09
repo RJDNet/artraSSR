@@ -64,7 +64,13 @@ app.get('*', async (req, res) => {
         {helmet.title.toComponent()}
         {helmet.meta.toComponent()}
         <head>
-          {/* <link rel="stylesheet" type="text/css" href="styles.css" /> */}
+
+          {/* <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+          <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" data-api-key="MGZiNDY0MjEtZTQxYy00ZTgxLTgzNzAtYTcxOWFjNjg3YzVjNjM2NzgyMzI5MTIxNjM3MTM5" id="snipcart"></script>
+          
+          <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" rel="stylesheet" type="text/css" /> */}
+
           <style type="text/css">${[...css].join('')}</style>
           <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet" />
           {styles}

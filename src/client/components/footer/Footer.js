@@ -16,7 +16,7 @@ const Footer = () => {
 
         <div className='footer'>
           <ul className='ulFooter'>
-            <li className='liFooterTitle'>About ARTREEL</li>
+            <li className='liFooterTitle'>About Artra</li>
             <a id='footerLink' href='/'><li className='liFooter'>About Us</li></a>
             <a id='footerLink' href='/'><li className='liFooter'>Blog</li></a>
             <a id='footerLink' href='/'><li className='liFooter'>Content</li></a>
@@ -57,7 +57,7 @@ const Footer = () => {
 
 
         <div className='copyContainer'>
-          <span className='copy'>©ARTREEL Image Solutions</span>
+          <span className='copy'>©Artra Image Solutions</span>
         </div>
       </div>
 

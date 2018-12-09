@@ -5,7 +5,6 @@ import { Query } from "react-apollo";
 import gql from "graphql-tag";
 
 import Loading from '../hoc/loading/Loading';
-// import Slide from 'react-reveal/Slide';
 
 const BlogPosts = () => (
   <Query
