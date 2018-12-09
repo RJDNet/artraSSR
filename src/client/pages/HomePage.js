@@ -7,7 +7,7 @@ import ShopSection from '../components/shopSection/ShopSection';
 import physical from '../images/shopSections/drawing1.jpg';
 import digital from '../images/shopSections/painting1.jpg';
 import accessories from '../images/shopSections/accessories1.jpg';
-import photographs from '../images/shopSections/photography1.jpg';
+import photographs from '../images/shopSections/photography2.jpg';
 
 const HomePage = () => (
   <div>
@@ -15,7 +15,7 @@ const HomePage = () => (
     <Wide />
     <div className='homeContentContainer'>
       <h1 className='homeTitle'>
-        Find great works whether digital or physical, photographs and art accessories from ARTREEL.
+        Find great works whether digital or handmade, photographs and art accessories from ARTREEL.
       </h1>
 
       <div className='homeShopContainer'>
@@ -34,7 +34,7 @@ const HomePage = () => (
           linkText='Buy Digital Pieces'
         />
         <ShopSection
-          title='Photographs'
+          title='Photography'
           text='High quality photographs of beautiful places and people!'
           image={photographs}
           loc='/photographs'

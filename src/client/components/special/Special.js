@@ -16,13 +16,13 @@ class Special extends Component {
 
   render() {
     const { hide } = this.state;
-    const hider = hide ? '100px' : '0px';
+    const hider = hide ? '110px' : '0px';
 
     return (
       <div className='specialContainer' style={{ height: hider }}>
         <div className='specialBut' onClick={this.toggleHider}>x</div>
         <div className='special'>
-          <p className='specialText'>New digital art pieces in store!</p>
+          <p className='specialText'>New digital art works in store now!</p>
         </div>
       </div>
     );
