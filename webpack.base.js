@@ -7,8 +7,8 @@
 // const devMode = process.env.NODE_ENV !== 'production'
 
 module.exports = {
-  mode: 'development',
-  // mode: 'production',
+  // mode: 'development',
+  mode: 'production',
 
 
   // optimization: {

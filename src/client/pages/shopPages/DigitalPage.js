@@ -53,7 +53,7 @@ const DigitalPage = () => {
   return (
     <div className='digitalContainer'>
       <h1 className='digitalPageTitle'>Digital</h1>
-      <p className='digitalPageText'>If you would like to </p>
+      {/* <p className='digitalPageText'>If you would like to </p> */}
 
       <div className='productsContainer'>
         <DigitalProducts />

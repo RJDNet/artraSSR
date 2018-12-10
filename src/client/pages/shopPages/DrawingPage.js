@@ -53,7 +53,7 @@ const DrawingPage = () => {
   return (
     <div className='drawingContainer'>
       <h1 className='drawingPageTitle'>Drawing</h1>
-      <p className='drawingPageText'>If you would like to </p>
+      {/* <p className='drawingPageText'>If you would like to </p> */}
 
       <div className='productsContainer'>
         <DrawingProducts />

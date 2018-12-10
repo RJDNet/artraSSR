@@ -53,7 +53,7 @@ const PhotographPage = () => {
   return (
     <div className='photographyContainer'>
       <h1 className='photographyPageTitle'>Photography</h1>
-      <p className='photographyPageText'>If you would like to </p>
+      {/* <p className='photographyPageText'>If you would like to </p> */}
 
       <div className='productsContainer'>
         <PhotographyProducts />
