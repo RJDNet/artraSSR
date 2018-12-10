@@ -7,8 +7,8 @@
 // const devMode = process.env.NODE_ENV !== 'production'
 
 module.exports = {
-  // mode: 'development',
-  mode: 'production',
+  mode: 'development',
+  // mode: 'production',
 
 
   // optimization: {
@@ -99,7 +99,7 @@ module.exports = {
       //   ],
       // },
       {
-        test: /\.(png|svg|jpg|gif)$/,
+        test: /\.(png|svg|jpg|jpeg|gif)$/,
         use: [
           'file-loader'
         ]

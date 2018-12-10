@@ -1,0 +1,46 @@
+.homeContentContainer {
+  width: 100%;
+  padding-top: 70px;
+}
+
+.homeTitle {
+  position: relative;
+  max-width: 700px;
+  margin: 0px auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 30px;
+  text-align: center;
+  color: #262935;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.homeShopContainer {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1100px;
+  margin: 0px auto;
+  flex-wrap: wrap;
+}
+
+.customerReviewsContainer {
+  max-width: 800px;
+  margin: 0px auto;
+  padding-top: 70px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.customerReviewsTitle {
+  padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 799px) {
+  .homeShopContainer {
+    justify-content: center;
+  }
+
+  // .customerReviewsContainer {
+  // }
+}

@@ -42,11 +42,11 @@ app.get('*', async (req, res) => {
     cache
   });
 
-  const css = new Set()
+  const css = new Set();
   const csscontext = {
     insertCss: (...styles) =>
       styles.forEach(style => css.add(style._getCss()))
-  }
+  };
 
   const component = await (
     <ApolloProvider client={client}>

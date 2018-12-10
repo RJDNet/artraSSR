@@ -1,8 +1,5 @@
 import React from 'react';
 
-// import footer from './Footer.scss';
-// import withStyles from 'isomorphic-style-loader/lib/withStyles';
-
 import Twitter from '../../images/Twitter.png';
 import Facebook from '../../images/Facebook.png';
 import Google from '../../images/Google.png';
@@ -55,71 +52,10 @@ const Footer = () => {
           </ul>
         </div>
 
-
         <div className='copyContainer'>
           <span className='copy'>©Artra Image Solutions</span>
         </div>
       </div>
-
-      {/* <style jsx>
-        {`
-          .footerContainer {
-            position: relative;
-            width: 100%;
-            background-color: #262626;
-            color: #e6e6e6;
-          }
-
-          .footerSectionContainer {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-          }
-
-          .footer {
-            position: relative;
-            display: block;
-            width: 180px;
-            height: 200px;
-            padding: 40px;
-          }
-
-          ul {
-            position: relative;
-            display: block;
-            padding: 0px;
-            justify-content: center;
-            align-content: center;
-            list-style-type: none;
-            text-align: center;
-          }
-
-          li {
-            position: relative;
-            display: block;
-            font-family: Poppins, sans-serif;
-            font-weight: 400;
-            font-size: 15px;
-          }
-
-          .copyContainer {
-            position: relative;
-            display: block;
-            width: 100%;
-            bottom: 0px;
-            margin-top: 20px;
-            margin-bottom: 30px;
-          }
-
-          .copy {
-            display: block;
-            margin-left: 40px;
-            font-family: Poppins, sans-serif;
-            font-weight: 400;
-            font-size: 15px;
-          }
-        `}
-      </style> */}
     </div>
   );
 };

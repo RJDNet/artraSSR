@@ -1,13 +1,16 @@
 .customerReviewContainer {
   padding-top: 40px;
+  padding-bottom: 20px;
 }
 
-// .customerReviewTitle {
-
-// }
-
 .customerReviewText {
+  color: #424242;
+  font-size: 14px;
+}
+
+.customerReviewer {
   padding-top: 10px;
   color: #424242;
-  font-size: 13px;
+  font-size: 14px;
+  font-weight: 700;
 }

@@ -23,7 +23,9 @@ class ShopSection extends Component {
 
     return (
       <div className='shopSection' onClick={this.shopClicker}>
-        <img className='shopSectionImage' src={this.props.image} />
+        <div className='shopSectionImageContainer'>
+          <img className='shopSectionImage' src={this.props.image} />
+        </div>
         <h3 className='shopSectionTitle'>{this.props.title}</h3>
         <p className='shopSectionText'>{this.props.text}</p>
         <div className='shopSectionLinkContainer'>
@@ -35,21 +37,3 @@ class ShopSection extends Component {
 };
 
 export default ShopSection;
-
-
-
-
-// const ShopSection = props => {
-//   return (
-//     <div className='shopSection' onClick={shopClicker(props.loc)}>
-//       <img className='shopSectionImage' src={props.image} />
-//       <h3 className='shopSectionTitle'>{props.title}</h3>
-//       <p className='shopSectionText'>{props.text}</p>
-//       <div className='shopSectionLinkContainer'>
-//         <Link to={props.loc} style={linkUnderline}>{props.linkText}</Link>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default ShopSection;

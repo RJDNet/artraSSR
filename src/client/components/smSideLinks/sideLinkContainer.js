@@ -15,20 +15,6 @@ const smLinkContainer = () => {
       <SMLink img={Google} label='Google' color='#DB4C3C' />
       <SMLink img={Instagram} label='Instagram' color='#8E6258' />
       <SMLink img={Youtube} label='Youtube' color='#D32B27' />
-
-
-
-      {/* <style jsx>
-        {`
-      .smLinkContainer {
-        position: fixed;
-        top: 300px;
-        right: 0px;
-        background-color: white;
-        z-index: 1150px;
-      }
-    `}
-      </style> */}
     </div>
   );
 };

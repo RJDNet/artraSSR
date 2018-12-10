@@ -28,20 +28,6 @@ const Menulink = props => {
       <li className='liMenuLink'>
         <Link id='menuLink' exact='true' to={props.linkTo} style={linkUnderline}>{props.label}</Link>
       </li>
-
-      {/* <style jsx>
-        {`
-          .liMenuLink {
-            position: relative;
-            display: block;
-            width: 100%;
-            list-style-type: none;
-            color: white;
-            white-space: nowrap;
-            transition: 0.1s;
-          }
-        `}
-      </style> */}
     </Aux>
   );
 };

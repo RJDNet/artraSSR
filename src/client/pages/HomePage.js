@@ -6,8 +6,8 @@ import ShopSection from '../components/shopSections/ShopSection';
 import CustomerReview from '../components/customerReviews/customerReview';
 
 import physical from '../images/shopSections/drawing1.jpg';
-import digital from '../images/shopSections/painting1.jpg';
-import accessories from '../images/shopSections/accessories1.jpg';
+import painting from '../images/shopSections/painting1.jpg';
+import digital from '../images/shopSections/digital1.jpg';
 import photographs from '../images/shopSections/photography2.jpg';
 
 const HomePage = () => (
@@ -21,32 +21,32 @@ const HomePage = () => (
 
       <div className='homeShopContainer'>
         <ShopSection
-          title='Hand Art'
-          text='Art created with Pen, Pencil, ink, paints, oils and more!'
+          title='Drawing'
+          text='We have many different pens, pencils, pastils and others accessories for artistic needs!'
           image={physical}
-          loc='/physical'
-          linkText='Buy Handmade Pieces'
+          loc='/drawing'
+          linkText='Buy Drawing Products'
         />
         <ShopSection
-          title='Digital Art'
-          text='We have digital art from a huge range of styles and themes!'
+          title='Painting'
+          text='Art created with paints, oils and many more including useful painting accessories!'
+          image={painting}
+          loc='/painting'
+          linkText='Buy Painting Products'
+        />
+        <ShopSection
+          title='Digital'
+          text='We have many products for creating digital art such as tablets and other electronic goods!'
           image={digital}
           loc='/digital'
-          linkText='Buy Digital Pieces'
+          linkText='Buy Digital Art Products'
         />
         <ShopSection
           title='Photography'
-          text='High quality photographs of beautiful places and people!'
+          text='High quality photography products and accessories for pictures of beautiful places and people!'
           image={photographs}
-          loc='/photographs'
-          linkText='Buy Photographs'
-        />
-        <ShopSection
-          title='Accessories'
-          text='We have many different art and photography accessories!'
-          image={accessories}
-          loc='/accessories'
-          linkText='Buy Accessories'
+          loc='/photography'
+          linkText='Buy Photography Products'
         />
       </div>
 
@@ -55,19 +55,23 @@ const HomePage = () => (
 
         <CustomerReview
           title='awdwa'
-          text='awdwa dawdwad aw awd wa dwaddwaw dawdawd wadwawdd awddawawdwa wad  dawdawddw awdwadawdawd adawdawd wadwaw'
+          text='awdwa dawdwad aw awd wa dwaddwaw dawdawd wadwawdd awddawawdwa wad dawdawddw awdwadawdawd adawdawd wadwawawd aw awdaw'
+          reviewer='-Afesfs Egrdr'
         />
         <CustomerReview
           title='awdwa'
-          text='awdwa dawdwad aw awd wa dwaddwaw dawdawd wadwawdd awddawawdwa wad  dawdawddw awdwadawdawd adawdawd wadwaw'
+          text='awdwa dawdwad aw awd wa dwaddwaw dawdawd wadwawdd awddawawdwa wad dawdawddw awdwadawdawd adawdawd wadwawa wdawdawd adwdawdaw awdawdawd wadaw daad a awdaw dawd.'
+          reviewer='-Gwdwa Rgrdr'
         />
         <CustomerReview
           title='awdwa'
-          text='awdwa dawdwad aw awd wa dwaddwaw dawdawd wadwawdd awddawawdwa wad  dawdawddw awdwadawdawd adawdawd wadwaw'
+          text='awdwa dawdwad aw awd wa dwaddwaw dawdawd wadwawdd awddawawdwa wad dawdawddw awd.'
+          reviewer='-Rfesfs Egrdr'
         />
         <CustomerReview
           title='awdwa'
-          text='awdwa dawdwad aw awd wa dwaddwaw dawdawd wadwawdd awddawawdwa wad  dawdawddw awdwadawdawd adawdawd wadwaw'
+          text='awdwa dawdwad aw awd wa dwaddwaw dawdawd wadwawdd awddawawdwa wad dawdawddw awdwadawdawd adawdawd wadwaw. Hwdwad wadawd dwa dawdaw daw wdwadaww '
+          reviewer='-Nfesfs Gyewgrdr'
         />
       </div>
 
