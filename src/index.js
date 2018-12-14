@@ -14,7 +14,7 @@ import compression from 'compression';
 import App from './client/App';
 
 // Apollo Imports
-import { ApolloProvider, renderToStringWithData, getDataFromTree } from 'react-apollo';
+import { ApolloProvider, getDataFromTree } from 'react-apollo';
 import { ApolloClient } from 'apollo-client';
 import { InMemoryCache } from "apollo-cache-inmemory";
 import { createHttpLink } from 'apollo-link-http';
@@ -33,7 +33,7 @@ app.get('*', async (req, res) => {
   const client = new ApolloClient({
     ssrMode: true,
     link: createHttpLink({
-      uri: 'https://webdash-qabhkulwny.now.sh/graphql',
+      uri: 'https://webdash-diodoqhqmo.now.sh/graphql',
       headers: {
         authorization: "cc5b60b7-a8fa-489d-84e6-a35d0b5cee6f"
       },
@@ -65,11 +65,11 @@ app.get('*', async (req, res) => {
         {helmet.meta.toComponent()}
         <head>
 
-          {/* <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 
           <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" data-api-key="MGZiNDY0MjEtZTQxYy00ZTgxLTgzNzAtYTcxOWFjNjg3YzVjNjM2NzgyMzI5MTIxNjM3MTM5" id="snipcart"></script>
-          
-          <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" rel="stylesheet" type="text/css" /> */}
+
+          <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" rel="stylesheet" type="text/css" />
 
           <style type="text/css">${[...css].join('')}</style>
           <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet" />

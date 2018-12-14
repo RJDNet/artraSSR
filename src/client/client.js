@@ -14,7 +14,7 @@ import fetch from 'node-fetch';
 
 const client = new ApolloClient({
   link: createHttpLink({
-    uri: 'https://webdash-qabhkulwny.now.sh/graphql',
+    uri: 'https://webdash-diodoqhqmo.now.sh/graphql',
     headers: {
       authorization: "cc5b60b7-a8fa-489d-84e6-a35d0b5cee6f"
     },

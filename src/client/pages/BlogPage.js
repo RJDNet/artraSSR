@@ -20,7 +20,7 @@ const BlogPosts = () => (
   >
     {({ loading, error, data }) => {
       if (loading) return <Loading />;
-      if (error) return <p>Error :(</p>;
+      if (error) return <p>No posts found.</p>;
 
       return data.getPosts.map(({ title, text, createdAt }) => (
         <div className='blogPost' key={title}>

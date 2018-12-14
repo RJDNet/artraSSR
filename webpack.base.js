@@ -75,29 +75,6 @@ module.exports = {
           },
         ]
       },
-      // {
-      //   test: /\.css$/,
-      //   use: [
-      //     'style-loader',
-      //     'css-loader'
-      //   ]
-      // },
-      // {
-      //   test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
-      //   loader: 'url-loader',
-      //   options: {
-      //     limit: 10000,
-      //   }
-      // },
-      // {
-      //   test: /\.(sa|sc|c)ss$/,
-      //   use: [
-      //     devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
-      //     'css-loader',
-      //     // 'postcss-loader',
-      //     // 'sass-loader',
-      //   ],
-      // },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/,
         use: [

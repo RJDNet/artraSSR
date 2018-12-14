@@ -22,7 +22,7 @@ const PaintingProducts = () => (
   >
     {({ loading, error, data }) => {
       if (loading) return <Loading />;
-      if (error) return <p>Error :(</p>;
+      if (error) return <p>No products found.</p>;
 
       return data.getProducts.map(({ title, text, price, image }, i) => (
         <div className='shopProduct' key={i}>
