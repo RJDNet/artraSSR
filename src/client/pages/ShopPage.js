@@ -1,11 +1,47 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { Redirect } from 'react-router';
 
-import Shopsection from './pageComponents/shopSections/Shopsection';
+// import Shopsection from './pageComponents/shopSections/Shopsection';
 
 import physical from '../images/shopSections/drawing1.jpg';
 import painting from '../images/shopSections/painting1.jpg';
 import digital from '../images/shopSections/digital1.jpg';
 import photographs from '../images/shopSections/photography2.jpg';
+
+class Shopsection extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      toLink: false,
+    };
+  }
+
+  shopClicker = () => {
+    this.setState({
+      toLink: true
+    });
+    window.scrollTo(0, 0);
+  };
+
+  render() {
+    if (this.state.toLink === true) {
+      return <Redirect push to={this.props.loc} />
+    }
+
+    return (
+      <div className='shopSection' onClick={this.shopClicker}>
+        <div className='shopSectionImageContainer'>
+          <img className='shopSectionImage' src={this.props.image} />
+        </div>
+        <h3 className='shopSectionTitle'>{this.props.title}</h3>
+        <p className='shopSectionText'>{this.props.text}</p>
+        <div className='shopSectionLinkContainer'>
+          <p className='shopSectionLink'>{this.props.linkText}</p>
+        </div>
+      </div>
+    );
+  };
+};
 
 const ShopPage = () => {
   return (
