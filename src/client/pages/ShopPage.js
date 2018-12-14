@@ -1,11 +1,11 @@
 import React from 'react';
 
-// import Shopsection from './pageComponents/shopSections/Shopsection';
+import Shopsection from './pageComponents/shopSections/Shopsection';
 
-// import physical from '../images/shopSections/drawing1.jpg';
-// import painting from '../images/shopSections/painting1.jpg';
-// import digital from '../images/shopSections/digital1.jpg';
-// import photographs from '../images/shopSections/photography2.jpg';
+import physical from '../images/shopSections/drawing1.jpg';
+import painting from '../images/shopSections/painting1.jpg';
+import digital from '../images/shopSections/digital1.jpg';
+import photographs from '../images/shopSections/photography2.jpg';
 
 const ShopPage = () => {
   return (
@@ -14,7 +14,7 @@ const ShopPage = () => {
       <p className='shopPageText'>We have a variety of products for different types of arts and crafts. If you would like to have a look at the different products available for a specific category, feel free to click one of the category's below and it will take you straight to the product page!</p>
 
       <div className='homeShopContainer'>
-        {/* <Shopsection
+        <Shopsection
           title='Drawing'
           text='We have many different pens, pencils, pastils and others accessories for artistic needs!'
           image={physical}
@@ -41,7 +41,7 @@ const ShopPage = () => {
           image={photographs}
           loc='/photography'
           linkText='Buy Photography Products'
-        /> */}
+        />
       </div>
     </div>
   );
