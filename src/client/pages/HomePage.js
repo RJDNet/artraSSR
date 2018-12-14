@@ -2,13 +2,13 @@ import React from 'react';
 
 import Special from '../components/special/Special';
 import Wide from '../components/wide/Wide';
-import Shopsection from './pageComponents/shopSections/Shopsection';
+// import ShopSection from './pageComponents/shopSections/Shopsection';
 import CustomerReview from '../components/customerReviews/customerReview';
 
-import physical from '../images/shopSections/drawing1.jpg';
-import painting from '../images/shopSections/painting1.jpg';
-import digital from '../images/shopSections/digital1.jpg';
-import photographs from '../images/shopSections/photography2.jpg';
+// import physical from '../images/shopSections/drawing1.jpg';
+// import painting from '../images/shopSections/painting1.jpg';
+// import digital from '../images/shopSections/digital1.jpg';
+// import photographs from '../images/shopSections/photography2.jpg';
 
 const HomePage = () => (
   <div>
@@ -20,7 +20,7 @@ const HomePage = () => (
       </h1>
 
       <div className='homeShopContainer'>
-        <Shopsection
+        {/* <Shopsection
           title='Drawing'
           text='We have many different pens, pencils, pastils and others accessories for artistic needs!'
           image={physical}
@@ -47,7 +47,7 @@ const HomePage = () => (
           image={photographs}
           loc='/photography'
           linkText='Buy Photography Products'
-        />
+        /> */}
       </div>
 
       <div className='customerReviewsContainer'>
