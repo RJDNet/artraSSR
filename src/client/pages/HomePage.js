@@ -2,7 +2,7 @@ import React from 'react';
 
 import Special from '../components/special/Special';
 import Wide from '../components/wide/Wide';
-import ShopSection from '../components/shopSections/Shopsection';
+import ShopSection from './pageComponents/shopSections/Shopsection';
 import CustomerReview from '../components/customerReviews/customerReview';
 
 import physical from '../images/shopSections/drawing1.jpg';
