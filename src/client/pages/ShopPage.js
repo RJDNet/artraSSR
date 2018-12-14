@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router';
 
-// import Shopsection from './pageComponents/shopSections/Shopsection';
-
 import physical from '../images/shopSections/drawing1.jpg';
 import painting from '../images/shopSections/painting1.jpg';
 import digital from '../images/shopSections/digital1.jpg';

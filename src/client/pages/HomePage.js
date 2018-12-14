@@ -3,7 +3,6 @@ import { Redirect } from 'react-router';
 
 import Special from '../components/special/Special';
 import Wide from '../components/wide/Wide';
-// import Shopsection from './pageComponents/shopSections/Shopsection';
 import CustomerReview from '../components/customerReviews/customerReview';
 
 import physical from '../images/shopSections/drawing1.jpg';
