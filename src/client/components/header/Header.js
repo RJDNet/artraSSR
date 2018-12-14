@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import logo from '../../images/mainlogo3.png';
-import logosmall from '../../images/mainlogosmall.png';
+import logosmall from '../../images/mainlogoSmall.png';
 import bag from '../../images/shopping-cart.png';
 
 const Header = () => {

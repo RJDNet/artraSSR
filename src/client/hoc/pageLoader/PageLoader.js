@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Loading = () => {
+const PageLoader = () => {
   return (
     <div>
     </div>
   );
 };
 
-export default Loading;
+export default PageLoader;

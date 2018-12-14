@@ -13,7 +13,7 @@
     "dev:build-server": "webpack --config webpack.server.js --watch",
     "dev:build-client": "webpack --config webpack.client.js --watch",
     "build": "NODE_ENV=production webpack --config webpack.server.js -p && webpack --config webpack.client.js -p",
-    "start": "node build/bundle.js ",
+    "start": "node build/bundle.js",
     "heroku-postbuild": "npm run build"
   },
   "author": "Russ D",
