@@ -20,26 +20,26 @@ import SideLinks from './components/smSideLinks/sideLinkContainer';
 
 
 import Loadable from 'react-loadable';
-import Loading from './hoc/pageLoader/pageLoader';
+import PageLoader from './hoc/pageLoader/PageLoader';
 
 const AboutComponent = Loadable({
   loader: () => import('./pages/AboutPage'),
-  loading: Loading
+  loading: PageLoader
 });
 
 const BlogComponent = Loadable({
   loader: () => import('./pages/BlogPage'),
-  loading: Loading
+  loading: PageLoader
 });
 
 const ShopComponent = Loadable({
   loader: () => import('./pages/ShopPage'),
-  loading: Loading
+  loading: PageLoader
 });
 
 const GalleryComponent = Loadable({
   loader: () => import('./pages/GalleryPage'),
-  loading: Loading
+  loading: PageLoader
 });
 
 
@@ -50,22 +50,22 @@ const GalleryComponent = Loadable({
 // Shop Pages
 const DrawingComponent = Loadable({
   loader: () => import('./pages/shopPages/DrawingPage'),
-  loading: Loading
+  loading: PageLoader
 });
 
 const PaintingComponent = Loadable({
   loader: () => import('./pages/shopPages/PaintingPage'),
-  loading: Loading
+  loading: PageLoader
 });
 
 const DigitalComponent = Loadable({
   loader: () => import('./pages/shopPages/DigitalPage'),
-  loading: Loading
+  loading: PageLoader
 });
 
 const PhotographyComponent = Loadable({
   loader: () => import('./pages/shopPages/PhotographyPage'),
-  loading: Loading
+  loading: PageLoader
 });
 
 const App = () => {
