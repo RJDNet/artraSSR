@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router';
 
-class ShopSection extends Component {
+class Shopsection extends Component {
   constructor(props) {
     super(props);
     this.state = {
       toLink: false,
-    }
-  };
+    };
+  }
 
   shopClicker = () => {
     this.setState({
@@ -36,4 +36,4 @@ class ShopSection extends Component {
   };
 };
 
-export default ShopSection;
+export default Shopsection;

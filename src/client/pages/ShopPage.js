@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ShopSection from '../components/shopSections/ShopSection';
+import ShopSection from '../components/shopSections/Shopsection';
 
 import physical from '../images/shopSections/drawing1.jpg';
 import painting from '../images/shopSections/painting1.jpg';
