@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ShopSection from './pageComponents/shopSections/Shopsection';
+import Shopsection from './pageComponents/shopSections/Shopsection';
 
 import physical from '../images/shopSections/drawing1.jpg';
 import painting from '../images/shopSections/painting1.jpg';
@@ -14,28 +14,28 @@ const ShopPage = () => {
       <p className='shopPageText'>We have a variety of products for different types of arts and crafts. If you would like to have a look at the different products available for a specific category, feel free to click one of the category's below and it will take you straight to the product page!</p>
 
       <div className='homeShopContainer'>
-        <ShopSection
+        <Shopsection
           title='Drawing'
           text='We have many different pens, pencils, pastils and others accessories for artistic needs!'
           image={physical}
           loc='/drawing'
           linkText='Buy Drawing Products'
         />
-        <ShopSection
+        <Shopsection
           title='Painting'
           text='Art created with paints, oils and many more including useful painting accessories!'
           image={painting}
           loc='/painting'
           linkText='Buy Painting Products'
         />
-        <ShopSection
+        <Shopsection
           title='Digital'
           text='We have many products for creating digital art such as tablets and other electronic goods!'
           image={digital}
           loc='/digital'
           linkText='Buy Digital Art Products'
         />
-        <ShopSection
+        <Shopsection
           title='Photography'
           text='High quality photography products and accessories for pictures of beautiful places and people!'
           image={photographs}

@@ -2,7 +2,7 @@ import React from 'react';
 
 import Special from '../components/special/Special';
 import Wide from '../components/wide/Wide';
-import ShopSection from './pageComponents/shopSections/Shopsection';
+import Shopsection from './pageComponents/shopSections/Shopsection';
 import CustomerReview from '../components/customerReviews/customerReview';
 
 import physical from '../images/shopSections/drawing1.jpg';
@@ -20,28 +20,28 @@ const HomePage = () => (
       </h1>
 
       <div className='homeShopContainer'>
-        <ShopSection
+        <Shopsection
           title='Drawing'
           text='We have many different pens, pencils, pastils and others accessories for artistic needs!'
           image={physical}
           loc='/drawing'
           linkText='Buy Drawing Products'
         />
-        <ShopSection
+        <Shopsection
           title='Painting'
           text='Art created with paints, oils and many more including useful painting accessories!'
           image={painting}
           loc='/painting'
           linkText='Buy Painting Products'
         />
-        <ShopSection
+        <Shopsection
           title='Digital'
           text='We have many products for creating digital art such as tablets and other electronic goods!'
           image={digital}
           loc='/digital'
           linkText='Buy Digital Art Products'
         />
-        <ShopSection
+        <Shopsection
           title='Photography'
           text='High quality photography products and accessories for pictures of beautiful places and people!'
           image={photographs}
