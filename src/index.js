@@ -33,7 +33,8 @@ app.get('*', async (req, res) => {
   const client = new ApolloClient({
     ssrMode: true,
     link: createHttpLink({
-      uri: 'http://cmtwebdash.herokuapp.com/graphql',
+      uri: 'https://cmtwebdash.herokuapp.com/graphql',
+      credentials: 'include',
       headers: {
         authorization: "cc5b60b7-a8fa-489d-84e6-a35d0b5cee6f"
       },
