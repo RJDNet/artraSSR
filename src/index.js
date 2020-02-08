@@ -7,7 +7,6 @@ import { Helmet } from 'react-helmet';
 import { flush } from 'styled-jsx/server';
 import { flushToHTML } from 'styled-jsx/server';
 import ContextProvider from './client/contextProvider';
-import cors from 'cors';
 
 import express from 'express';
 import compression from 'compression';
@@ -35,12 +34,8 @@ app.get('*', async (req, res) => {
     ssrMode: true,
     link: createHttpLink({
       uri: 'https://cmtwebdash.herokuapp.com/graphql',
-      withCredentials: true,
       headers: {
         authorization: "cc5b60b7-a8fa-489d-84e6-a35d0b5cee6f"
-      },
-      fetchOptions: {
-        mode: 'no-cors',
       },
       fetch: fetch
     }),
