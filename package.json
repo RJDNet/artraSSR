@@ -33,7 +33,7 @@
     "graphql-tag": "2.10.0",
     "import-inspector": "^2.0.0",
     "isomorphic-style-loader": "^4.0.0",
-    "lodash": "4.17.11",
+    "lodash": "4.17.15",
     "node-fetch": "2.3.0",
     "prop-types": "15.6.2",
     "react": "16.0.0",
