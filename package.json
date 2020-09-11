@@ -34,7 +34,7 @@
     "import-inspector": "^2.0.0",
     "isomorphic-style-loader": "^4.0.0",
     "lodash": "4.17.11",
-    "node-fetch": "2.3.0",
+    "node-fetch": "2.6.1",
     "prop-types": "15.6.2",
     "react": "16.0.0",
     "react-apollo": "2.3.2",
