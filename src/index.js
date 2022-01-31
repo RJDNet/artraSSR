@@ -18,6 +18,7 @@ import { ApolloProvider, getDataFromTree } from 'react-apollo';
 import { ApolloClient } from 'apollo-client';
 import { InMemoryCache } from "apollo-cache-inmemory";
 import { createHttpLink } from 'apollo-link-http';
+
 import fetch from 'node-fetch';
 
 const app = express();
@@ -98,46 +99,8 @@ app.get('*', async (req, res) => {
     res.send(`<!doctype html>\n${ReactDOMServer.renderToStaticMarkup(html)}`);
     res.end();
   });
-
-  //   const helmet = Helmet.renderStatic();
-  //   const styles = flush();
-
-  //   const html = (<html>
-  //     <head>
-  //       {/* <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet" /> */}
-  //       {helmet.title.toComponent()}
-  //       {helmet.meta.toComponent()}
-  //       {styles}
-  //     </head>
-  //     <body >
-  //       <div id="root">
-  //         {content}
-  //       </div>
-  //       <script
-  //         charSet="UTF-8"
-  //         dangerouslySetInnerHTML={{
-  //           __html: `window.__APOLLO_STATE__=${JSON.stringify(initialState)};`,
-  //         }}
-  //       />
-  //       <script charSet="UTF-8" src="bundle.js" />
-  //     </body>
-  //   </html>)
-
-  //   res.status(200);
-  //   res.send(
-  //     ReactDOMServer.renderToString(html)
-  //   );
-  // } catch (e) {
-  //   res.status(404);
-  // }
-  // res.end();
 });
 
 app.listen(process.env.PORT || 3000, () => {
   console.log('Listening on port 3000');
 });
-
-{/* <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-<script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" data-api-key="MGZiNDY0MjEtZTQxYy00ZTgxLTgzNzAtYTcxOWFjNjg3YzVjNjM2NzgyMzI5MTIxNjM3MTM5" id="snipcart"></script>
-<link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" rel="stylesheet" type="text/css" />  */}

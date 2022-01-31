@@ -4,12 +4,10 @@ const baseConfig = require('./webpack.base.js');
 const webpackNodeExternals = require('webpack-node-externals');
 
 const config = {
-  // mode: 'production',
   target: 'node',
   entry: './src/index.js',
   output: {
     filename: 'bundle.js',
-    // filename: 'bundle.[contenthash].js',
     path: path.resolve(__dirname, './build')
   },
   externals: [webpackNodeExternals()]
